@@ -1,0 +1,46 @@
+<header>
+  <div class="container">
+      <div class="row">
+          <div class="col-4 pt-3">
+            <a routerLink="/dashboard"><ion-icon name="arrow-back"></ion-icon></a>
+          </div>
+          <div class="col-8 text-end">
+              <h3><div id="output"></div></h3>
+          </div>
+      </div>
+  </div>
+</header>
+
+<div class="destination">
+    <div class="container">
+      <div class="input-wrap-two">
+        <ion-icon name="location"></ion-icon>
+        <input type="text" [(ngModel)]="shipment.destination" id="destination" class="input-text" placeholder="Enter destination" disabled/>
+      </div>
+    </div>
+</div>
+
+<div id="map"></div>
+
+<footer>
+  <div class="container">
+      <input type="hidden" [(ngModel)]="shipment.tripStatus" id="tripStatus" name="tripStatus"/>
+      <div class="input-wrap">
+        <ion-icon name="person"></ion-icon>
+        <input type="text" [(ngModel)]="shipment.customerName" id="customerName" class="input-text" placeholder="Customer name" disabled/>
+      </div>
+      <div class="input-wrap">
+        <ion-icon name="call"></ion-icon>
+        <input type="text" [(ngModel)]="shipment.customerPhoneNumber" id="customerPhoneNumber" class="input-text" placeholder="Customer phone number" disabled/>
+      </div>
+      <div class="input-wrap">
+        <ion-icon name="bag"></ion-icon>
+        <div  class="input-text">{{shipment.customerPackage}}</div>
+      </div>
+      <div class="btn-wrap">
+        <div class="add-btn" (click)="presentAlertConfirm()" style="background-color: red; color: white;">Cancel trip</div>
+        <div class="add-btn" (click)="start()">Start trip</div>
+      </div>
+      
+  </div>
+</footer>

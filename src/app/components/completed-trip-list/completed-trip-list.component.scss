@@ -1,0 +1,71 @@
+:root{
+    --font: 'Poppins', sans-serif;
+    --font-color: #666;
+    --font-color2: #ABA1A1;
+    --primary-color: #146935;
+    --secondary-color: #D7E024;
+}
+
+.trip-card {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #efefef;
+    height: 140px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 4px -4px #ddd;
+}
+
+.info-date {
+    color: #ccc;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+h4 {
+    margin: 0;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    color: var(--primary-color);
+}
+
+ion-icon {
+    float: left;
+    margin-top: 3px;
+    margin-right: 5px;
+    color: var(--secondary-color);
+}
+
+span {
+    color: #ccc;
+}
+
+.info {
+    width: 100%;
+    height: 20px;
+    float: left;
+    margin-top: 5px;
+}
+
+.info-detail {
+    float: left;
+    margin-top: 1px;
+    width: 90%;
+}
+
+.status {
+    font-style: italic;
+    float: right;
+}
+
+.pending {
+    color: orange;
+}
+
+.started {
+    color: #ccc;
+}
+
+.completed {
+    color: green;
+}

@@ -1,0 +1,24 @@
+:root{
+    --font: 'Poppins', sans-serif;
+    --font-color: #666;
+    --font-color2: #ABA1A1;
+    --primary-color: #146935;
+    --secondary-color: #D7E024;
+}
+
+ion-tab-button {
+    background-color:var(--primary-color);
+    padding-top: 5px;
+}
+
+ion-icon {
+    color: var(--secondary-color);
+    font-size: 20px;
+}
+
+ion-label {
+    color:#fff;
+    padding-bottom: 5px;
+}
+
+

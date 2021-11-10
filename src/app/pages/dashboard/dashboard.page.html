@@ -1,0 +1,30 @@
+<input type="hidden" [(ngModel)]="location.cordsLatt" id="cordsLatt" name="cordsLatt"/>
+<input type="hidden" [(ngModel)]="location.cordsLong" id="cordsLong" name="cordsLong" />
+<input type="hidden" [(ngModel)]="location.cordsTime" id="cordsTime" name="cordsTime" />
+<input type="hidden" [(ngModel)]="location.cordsAddress" id="cordsAddress" name="cordsAddress" />
+<input type="hidden" [(ngModel)]="location.onlineStatus" id="onlineStatus" name="onlineStatus" />
+<ion-content (click)="updateLocation()">
+  <ion-tabs class="tab-wrap">
+    <ion-tab-bar  slot="bottom">
+      <ion-tab-button tab="home">
+        <ion-icon name="home"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="pending-trips">
+        <ion-icon name="hourglass"></ion-icon>
+        <ion-label>Pending</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="started-trips">
+        <ion-icon name="navigate"></ion-icon>
+        <ion-label>Started</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="completed-trips">
+        <ion-icon name="analytics"></ion-icon>
+        <ion-label>Completed</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>

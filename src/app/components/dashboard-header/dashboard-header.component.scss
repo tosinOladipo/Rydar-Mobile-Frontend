@@ -1,0 +1,93 @@
+:root{
+    --font: 'Poppins', sans-serif;
+    --font-color: #666;
+    --font-color2: #ABA1A1;
+    --primary-color: #146935;
+    --secondary-color: #D7E024;
+}
+
+.header {
+    padding-top: 20%;
+    color: white;
+}
+
+
+.col-6 ion-icon {
+    margin-top: 15px;
+}
+
+.user-num {
+    margin-top: 3px;
+}
+
+
+.icon-box {
+    width: 20px;
+    height: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    text-align: center;
+    float: left;
+}
+
+.icon-box ion-icon {
+    color: var(--primary-color);
+    margin-top: 4px;
+}
+
+.rider-num {
+    font-size: 16px;
+    font-weight: 400;
+    float: left;
+    margin-left: 5px;
+}
+
+.logout-btn {
+    width: 70px;
+    height: 30px;
+    background-color: white;
+    color: var(--primary-color);
+    border-radius: 6px;
+    float: right;
+    margin-top: 12px;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.col-10 {
+    padding-top: 6px;
+    font-weight: 600;
+}
+
+.col-a {
+    width: 65%;
+    float: left;
+    text-align: right;
+    margin-top: 7px;
+}
+
+.col-b {
+    width: 35%;
+    float: left;
+    margin-top: 9px;
+    color: var(--secondary-color);
+}
+
+.bell-notification {
+    float: left;
+    margin-top: 15px;
+}
+
+.notification {
+    width: 18px;
+    height: 18px;
+    float: left;
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 100%;
+    margin-left: -8px;
+    margin-top: 7px;
+}

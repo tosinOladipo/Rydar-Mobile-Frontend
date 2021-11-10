@@ -1,0 +1,53 @@
+:root{
+    --font: 'Poppins', sans-serif;
+    --font-color: #666;
+    --font-color2: #ABA1A1;
+    --primary-color: #146935;
+    --secondary-color: #D7E024;
+}
+
+h4 {
+    width: auto;
+}
+
+section ion-icon {
+    margin-right: 5px;
+}
+
+
+
+ion-icon {
+    float: left;
+    font-size: 20px;
+    margin-right: 5px;
+    color: var(--primary-color);
+}
+
+.time {
+    float: left;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 1px;
+    color: var(--primary-color);
+}
+
+.time span {
+    margin-left: 5px;
+    font-weight: 400;
+}
+
+section {
+    height: 100px;
+    padding: 15px;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    margin-top: 20px;
+}
+
+.location {
+    width: 100%;
+    height: 30px;
+    float: left;
+    padding-top: 5px;
+    color: var(--secondary-color);
+}

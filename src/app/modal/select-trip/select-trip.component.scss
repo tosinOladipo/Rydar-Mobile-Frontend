@@ -1,0 +1,69 @@
+:root{
+    --font: 'Poppins', sans-serif;
+    --font-color: #666;
+    --font-color2: #ABA1A1;
+    --primary-color: #146935;
+    --secondary-color: #D7E024;
+}
+
+.main {
+    width: 100%;
+    height: 250px;
+    background-color: var(--primary-color);
+    border-radius: 0% 0% 10% 10%;
+    background-image: url(../../../assets/img/green-bg.png);
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    padding-top: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-box {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid #efefef;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 0 4px 4px -4px #ddd;
+    text-align: center;
+}
+
+.nav-box2 {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid #efefef;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: 0 4px 4px -4px #ddd;
+    text-align: center;
+}
+
+.nav-icon-box {
+    width: 45px;
+    height: 45px;
+    background-color: #efefef;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: var(--secondary-color);
+}
+
+.nav-icon-box ion-icon {
+    margin-top: 7px;
+}
+
+h4 {
+    margin-top: 0px;
+    color: var(--primary-color);
+}

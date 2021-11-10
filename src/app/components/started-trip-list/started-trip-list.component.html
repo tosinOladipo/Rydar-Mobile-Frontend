@@ -1,0 +1,23 @@
+<div class="container" *ngFor="let shipment of shipments">
+  <a href="/request/{{shipment.orderId}}/{{shipment.riderId}}"><div class="trip-card">
+      <span>{{shipment.customerName}}</span> <span class="status pending">{{shipment.tripType}}</span>
+      <h4>
+        <ion-icon name="location"></ion-icon>
+        <div class="info-detail">{{shipment.destination}}</div>
+      </h4>
+      <div class="info">
+        <ion-icon name="call"></ion-icon>
+        <div class="info-detail">{{shipment.customerPhoneNumber}}</div>
+      </div>
+      <div class="info">
+        <ion-icon name="calendar"></ion-icon>
+        <div class="info-date">{{shipment.createdOn | date }}</div>
+      </div>
+  </div></a>
+</div>
+
+<div class="trip-card" *ngIf="shipments.length === 0" style="text-align: center; padding-top: 30px; color: red;">
+  <h3>No started trips</h3>
+</div>
+
+

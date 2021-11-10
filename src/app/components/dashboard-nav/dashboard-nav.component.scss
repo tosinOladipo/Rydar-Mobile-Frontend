@@ -1,0 +1,47 @@
+:root{
+    --font: 'Poppins', sans-serif;
+    --font-color: #666;
+    --font-color2: #ABA1A1;
+    --primary-color: #146935;
+    --secondary-color: #D7E024;
+}
+
+h2 {
+    color: white;
+}
+
+.row a {
+    width: 44%;
+    height: 120px;
+    margin-left: 4%;
+    margin-bottom: 4%;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    text-align: center;
+    box-shadow: 0 4px 4px -4px #ddd;
+    text-decoration: none;
+}
+
+.nav-icon-box {
+    width: 45px;
+    height: 45px;
+    background-color: #efefef;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: var(--secondary-color);
+}
+
+.nav-icon-box ion-icon {
+    margin-top: 7px;
+}
+
+h4 {
+    margin-top: 0px;
+    color: var(--primary-color);
+}
+

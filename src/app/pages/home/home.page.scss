@@ -1,0 +1,43 @@
+:root{
+    --font: 'Poppins', sans-serif;
+    --font-color: #666;
+    --font-color2: #ABA1A1;
+    --primary-color: #146935;
+    --secondary-color: #D7E024;
+}
+
+.cool {
+    background-color: var(--primary-color);
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 250px;
+    background-color: var(--primary-color);
+    border-radius: 0% 0% 10% 10%;
+    background-image: url(../../../assets/img/green-bg.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.nav-wrap {
+    width: 85%;
+    height:100px;
+    background-color:var(--secondary-color);
+    border:1px solid #ccc;
+    margin: auto;
+    margin-top: -50px;
+}
+
+.offline-card {
+    width: 100%;
+    padding: 1px;
+    text-align: center;
+    color:white;
+    background-color: red;
+    border-radius: 10px;
+}
+
+
+

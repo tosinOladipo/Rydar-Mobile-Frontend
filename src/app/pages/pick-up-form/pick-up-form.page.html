@@ -1,0 +1,52 @@
+<header>
+  <div class="container">
+      <div class="row">
+          <div class="col-4 pt-3">
+            <a routerLink="/dashboard"><ion-icon name="arrow-back"></ion-icon></a>
+          </div>
+          <div class="col-8 text-end">
+              <h3>Pick up form</h3>
+          </div>
+      </div>
+  </div>
+</header>
+
+<div class="destination">
+    <div class="container">
+        <ion-searchbar [(ngModel)]="trip.destination" [(ngModel)]="autocomplete.input" (ionInput)="UpdateSearchResults()" placeholder="Enter destination"  (ionClear)="ClearAutocomplete()"></ion-searchbar>
+        <ion-list [hidden]="autocompleteItems.length == 0">
+          <ion-item *ngFor="let item of autocompleteItems" tappable (click)="SelectSearchResult(item)">
+            {{ item.description }}
+          </ion-item>
+        </ion-list>
+    </div>
+</div>
+
+<div id="map"></div>
+<input type="hidden" [(ngModel)]="trip.riderId" id="riderId" name="riderId"/>
+<input type="hidden" [(ngModel)]="trip.companyID" id="companyId" name="companyId"/>
+<input type="hidden" [(ngModel)]="trip.orderId" id="orderId" name="orderId"/>
+<input type="hidden" [(ngModel)]="trip.tripType" id="tripType" name="tripType"/>
+<input type="hidden" [(ngModel)]="trip.tripStatus" id="tripStatus" name="tripStatus"/>
+<input type="hidden" [(ngModel)]="trip.tripMonth" id="tripMonth" name="tripMonth"/>
+<input type="hidden" [(ngModel)]="trip.tripYear" id="tripYear" name="tripYear"/>
+<input type="hidden" [(ngModel)]="trip.destinationLat" id="destinationLat" name="destinationLat"/>
+<input type="hidden" [(ngModel)]="trip.destinationLng" id="destinationLng" name="destinationLng"/>
+
+<footer>
+    <div class="container">
+        <div class="input-wrap">
+          <ion-icon name="person"></ion-icon>
+          <input type="text" [(ngModel)]="trip.customerName" name="customerName" id="customerName" class="input-text" placeholder="Customer name"/>
+        </div>
+        <div class="input-wrap">
+          <ion-icon name="call"></ion-icon>
+          <input type="text" [(ngModel)]="trip.customerPhoneNumber" name="customerPhoneNumber" id="customerPhoneNumber" class="input-text" placeholder="Customer phone number"/>
+        </div>
+        <div class="input-wrap">
+          <ion-icon name="bag"></ion-icon>
+          <input type="text" [(ngModel)]="trip.customerPackage" name="customerPackage" id="customerPackage" class="input-text" placeholder="Customer package"/>
+        </div>
+        <div class="add-btn" (click)="addTrip()">Submit</div>
+    </div>
+</footer>

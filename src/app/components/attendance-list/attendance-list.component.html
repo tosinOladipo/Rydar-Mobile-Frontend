@@ -1,0 +1,14 @@
+    
+    <section *ngFor="let item of lists | slice:0:1">
+      <div class="container">
+        <ion-icon name="stopwatch-outline"></ion-icon>
+        <div class="time">
+          {{item.attendanceTime | date:'shortTime'}}
+          <span>{{item.attendanceDate}}</span>
+        </div>
+        <div class="location">{{item.location}}</div>
+      </div>
+    </section>
+
+    
+

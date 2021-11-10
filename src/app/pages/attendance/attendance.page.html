@@ -1,0 +1,31 @@
+<app-header [title]="title"></app-header>
+
+<ion-content>
+
+  <input type="text"  [(ngModel)]="attendance.riderId" id="riderId" name="riderId">
+  <input type="text" [(ngModel)]="attendance.companyID" id="companyID" name="companyID">
+  <input type="text" [(ngModel)]="attendance.firstName" id="firstName" name="firstName">
+  <input type="text" [(ngModel)]="attendance.lastName" id="lastName" name="lastName">
+  <input type="text"  [(ngModel)]="attendance.location" id="location" name="location">
+  <input type="text"  [(ngModel)]="attendance.attendanceTime" id="attendanceTime" name="attendanceTime">
+  <input type="text"  [(ngModel)]="attendance.attendanceDate" id="attendanceDate" name="attendanceDate">
+  <div class="container text-center">
+      <div class="attendance-btn" (click)="submitAttendance()">
+        <ion-icon name="finger-print"></ion-icon>
+      </div>
+      Tap to submit attendance
+  </div>
+
+     
+  <section *ngFor="let item of lists | slice:0:1">
+    <div class="container">
+      <ion-icon name="stopwatch-outline"></ion-icon>
+      <div class="time">
+        {{item.attendanceTime | date:'shortTime'}}
+        <span>{{item.attendanceDate}}</span>
+      </div>
+      <div class="location">{{item.location}}</div>
+    </div>
+  </section>
+
+</ion-content>

@@ -1,0 +1,28 @@
+<div class="container header">
+
+    <div class="row pb-3">
+      <div class="col-6">
+        <img class="bell-notification" src="../../../assets/img/bell.png">
+        <div class="notification">{{shipments.length}}</div>
+      </div>
+      <div class="col-6">
+        <div class="avatar" style="background-image: url(../../../assets/img/profile-img.jpg);"></div>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-8">
+            <span>{{rider.firstName}} {{rider.lastName}}</span>
+            <div class="user-num">
+                <div class="icon-box"><ion-icon name="call"></ion-icon></div>
+                <div class="rider-num">{{rider.phoneNumber}}</div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="logout-btn" (click)="logout()">
+                    <div class="col-a">Logout</div>
+                    <div class="col-b"><ion-icon name="power"></ion-icon></div>
+            </div>
+        </div>
+    </div>
+</div>
